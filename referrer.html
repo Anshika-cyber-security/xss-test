@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Payload Test</title>
+</head>
+<body>
+  <!-- ✅ Immediate alert from your hosted payload -->
+  <script>alert('XSS from Anshika')</script>
+
+  <h2>DOM XSS Testing</h2>
+  <p>Click the link below to test DOM-based XSS injection using document.referrer + innerHTML:</p>
+
+  <!-- ✅ This link sends your hosted payload as the Referer -->
+  <a href="https://public-firing-range.appspot.com/dom/toxicdom/document/referrer/innerHtml" target="_blank">
+    Test DOM XSS on Firing Range
+  </a>
+</body>
+</html>
