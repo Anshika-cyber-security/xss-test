@@ -1,0 +1,4 @@
+div { animation-name: x; }
+@keyframes x {}
+div { animation-duration: 1s; }
+/* then rely on event handler if you can inject a <div> */
