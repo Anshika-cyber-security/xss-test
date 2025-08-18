@@ -6,15 +6,16 @@
 <body>
   <h2>Referrer-based XSS Test</h2>
 
-  <!-- This fires immediately to prove your payload loads -->
+  <!-- This will confirm your GitHub page itself loads -->
   <script>alert("XSS from Anshika's referrer.html")</script>
 
   <p>
     Click below — it will send this page’s URL as the <b>Referer</b> header 
     to the Firing Range lab. Since the lab takes document.referrer and drops it 
-    into innerHTML, our <script> executes there too.
+    into innerHTML, our payload will execute there too.
   </p>
 
+  <!-- The important link -->
   <a href="https://public-firing-range.appspot.com/dom/toxicdom/document/referrer/innerHtml" target="_blank">
     Test Referrer DOM XSS on Firing Range
   </a>
